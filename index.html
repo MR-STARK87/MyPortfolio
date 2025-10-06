@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syed Zaid Ali | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font Awesome for Icons -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Smooth Scroll Library -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"
+      defer
+    ></script>
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-inner">
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="nav-links" id="primary-navigation">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Toggle dark mode"
+          aria-pressed="false"
+        >
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div class="cursor-orb" id="cursorOrb" aria-hidden="true"></div>
+    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+    <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <div class="hero-wrapper">
+        <div class="hero-content">
+          <h1 class="hero-title">Syed <span>Zaid</span> Ali</h1>
+          <p class="hero-quote">“It's all on us—follow or be followed.”</p>
+          <a href="#projects" class="btn">Explore My Work</a>
+        </div>
+        <div class="hero-photo">
+          <img
+            src="assets/images/croped.png"
+            alt="Zaid's Photo"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about" aria-label="About">
+      <div class="about-container" id="about-content">
+        <h2>About Me</h2>
+        <p>
+          I'm not just another developer—I build ideas that speak. <br /><br />
+          A B.Tech CS student passionate about creating intuitive, scalable, and
+          aesthetic web solutions. From crafting dynamic websites to
+          experimenting with AI models, I love solving problems in the simplest
+          way possible. <br /><br />
+          Ranked <strong>12th out of 92</strong> in a national-level AI
+          hackathon <span class="highlight">"Samadhan 1.0"</span> for building an intelligent healthcare chatbot. Currently
+          sharpening my skills in <span class="highlight">Java</span>,
+          <span class="highlight">DSA</span>, and
+          <span class="highlight">full-stack web development</span>.<br /><br />
+          For me, coding isn’t work—it’s war, and I show up every day with a
+          warrior madness mindset.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills" aria-label="Skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="fab fa-java"></i> Java</div>
+        <div class="skill-card"><i class="fab fa-python"></i> Python</div>
+        <div class="skill-card"><i class="fab fa-js"></i> JavaScript</div>
+        <div class="skill-card"><i class="fab fa-html5"></i> HTML</div>
+        <div class="skill-card"><i class="fab fa-css3-alt"></i> CSS</div>
+        <div class="skill-card"><i class="fab fa-css3"></i> Tailwind</div>
+        <div class="skill-card"><i class="fab fa-node"></i> Node.js</div>
+        <div class="skill-card"><i class="fas fa-server"></i> Express</div>
+        <div class="skill-card"><i class="fas fa-database"></i> MongoDB</div>
+        <div class="skill-card"><i class="fas fa-plug"></i> REST API</div>
+        <div class="skill-card"><i class="fas fa-code"></i> EJS</div>
+        <div class="skill-card">
+          <i class="fas fa-memory"></i> Redis (Learning)
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects" aria-label="Projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/images/DEW.png" alt="DEW preview" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <h3>DEW</h3>
+            <p style="font-size: 0.95rem; line-height: 1.4">
+              <strong>DEW Weather</strong> is a
+              <em>pastel glassmorphic</em> weather app built with <em>HTML</em>,
+              <em>Tailwind CSS</em>, <em>custom CSS</em>, and
+              <em>vanilla JS</em>. It remembers your home city and loads its
+              weather automatically on your next visit.
+            </p>
+
+            <a
+              href="https://mr-stark87.github.io/DEW/"
+              class="project-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Try It Now</a
+            >
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="assets/images/Retrotask.png"
+              alt="Retrotask preview"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-content">
+            <h3>Retrotask</h3>
+            <p style="font-size: 0.95rem; line-height: 1.4">
+              A <strong>retro-themed To-Do List</strong> app built with
+              <em>HTML</em>, <em>Tailwind CSS</em>, <em>custom CSS</em>, and
+              <em>vanilla JS</em>. It features
+              <strong>color-coded priorities</strong> and
+              <strong>local storage</strong> for smooth task saving, wrapped in
+              a <em>pixelated, cyberpunk style</em>.
+            </p>
+
+            <a
+              href="https://mr-stark87.github.io/Retrotask/"
+              class="project-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Try It Now</a
+            >
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="assets/images/Medibuddy.png"
+              alt="Medibuddy preview"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-content">
+            <h3>Medibuddy</h3>
+            <p>
+              A <strong>Streamlit-based healthcare assistant</strong> providing
+              <em>AI-driven advice</em>,<br />
+              <strong>daily health tips</strong>, and an
+              <u>interactive map</u> to locate nearby
+              hospitals—<strong>smart</strong>, <strong>practical</strong>, and
+              <strong>user-focused</strong>.
+            </p>
+
+            <a
+              href="https://medibuddy-ai.streamlit.app"
+              class="project-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Try It Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact" aria-label="Contact">
+      <h2>Contact Me</h2>
+      <p>Have an idea or just want to say hi? Drop me a message!</p>
+
+      <div class="contact-card">
+        <form class="contact-form" id="contactForm" novalidate>
+          <!-- Honeypot -->
+          <label class="visually-hidden" for="botcheck"
+            >Leave this field empty</label
+          >
+          <input
+            type="text"
+            id="botcheck"
+            name="_botcheck"
+            autocomplete="off"
+            class="visually-hidden"
+            tabindex="-1"
+          />
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            aria-label="Your Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            aria-label="Your Email"
+            required
+          />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            aria-label="Your Message"
+            required
+          ></textarea>
+          <button type="submit" id="sendBtn">
+            <i class="fa-solid fa-paper-plane" style="margin-right: 8px"></i>
+            Send Message
+          </button>
+        </form>
+
+        <div class="contact-info">
+          <div>
+            <h3>Let’s Build Something</h3>
+            <p>
+              I’m open to freelance work, internships, and cool collaborations.
+              Reach out and I’ll get back to you fast.
+            </p>
+
+            <div class="info-row">
+              <i class="fa-solid fa-envelope"></i>
+              <span id="emailText" role="button" title="Click to copy"
+                >zaidali9036@gmail.com</span
+              >
+            </div>
+            <div class="info-row">
+              <i class="fa-brands fa-discord"></i>
+              <span>mrstark87_24293</span>
+            </div>
+            <div class="info-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Bhopal, India</span>
+            </div>
+          </div>
+
+          <div>
+            <h3>Find me online</h3>
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/syed-zaid-ali-5a5803330/"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://github.com/MR-STARK87"
+                aria-label="GitHub"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button
+      id="backToTop"
+      class="back-to-top"
+      aria-label="Back to top"
+      title="Back to top"
+    >
+      ↑
+    </button>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">
+      Message sent! I’ll be in touch 🔥
+    </div>
+  </body>
+</html>
+
